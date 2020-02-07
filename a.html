@@ -1,0 +1,32 @@
+<!DOCtype html>
+<html>
+	<head>
+
+<script type="text/javascript">
+
+function my()
+{
+	var str = document.getElementById("t1").value
+	var result=" ";	
+ result = result + "no.of chars"+ str.length + \n;
+	var arr = str.split('');
+	result = result +"no of words "+ arr.length + \n;
+	var line =str.split('\n');
+	result = result + "no.of lines" +line.length + \n;
+
+	alert(result);
+}
+
+</script>
+
+</head>
+
+<body>
+
+	<form action="">
+	<textarea rows="30" cols="30" id="t1"></textarea>
+<input type="submit" value="submit" onclick="my()">
+</form>
+
+</body>
+</html>
